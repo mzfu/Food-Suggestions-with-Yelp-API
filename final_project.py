@@ -6,6 +6,7 @@ import secret_data
 import csv
 import sqlite3
 from bs4 import BeautifulSoup
+import plotly
 import plotly.plotly as py
 import plotly.graph_objs as go
 
@@ -13,7 +14,11 @@ from urllib.parse import quote
 
 
 api_key = secret_data.API_KEY
+PLOTLY_USERNAME = secret_data.PLOTLY_USERNAME
+PLOTLY_API_KEY = secret_data.PLOTLY_API_KEY
 MAPBOX_TOKEN = secret_data.MAPBOX_TOKEN
+
+plotly.tools.set_credentials_file(username = PLOTLY_USERNAME, api_key = PLOTLY_API_KEY)
 
 # for long term memory
 STATECSV = 'states.csv'
