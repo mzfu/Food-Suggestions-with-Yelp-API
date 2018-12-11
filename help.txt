@@ -1,0 +1,46 @@
+
+Commands available:
+
+map
+	Description: Plot all top 20 businesses for a state.
+	Hover for business name and title.
+
+	Input:
+		* state=<state abbreviation>
+		Description: an abbreviation of a state
+
+
+heatmap
+	Description: Plot a heatmap of the relationship between states and food titles.
+	Hover for state abbreviation, name of the business, and average rating for 
+	certain type.
+
+	Input:
+		* state_lst=<a list of state abbreviations>
+		Description: a list of state abbreviations seperated by space
+
+
+open
+	Description: Given a certain state, date and time, return all the businesses 
+	open at that time.
+
+	Input:
+		* state=<state abbreviation>
+		Description: an abbreviation of a state
+
+		* date=<date>
+		Description: a valid date of a week, capital the first letter
+
+		* time=<time>
+		Description: a time input in 24hr format, e.g.: 18:23
+
+
+title
+	Description: Given a list of states, return the best food types with the average
+	rating for that type.
+
+	Options:
+		* state_lst=<a list of state abbreviations>
+		Description: a list of state abbreviations seperated by space
+
+		
